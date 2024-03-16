@@ -28,15 +28,19 @@ const CommentsModal = ({ isOpen, onClose, post }) => {
     };
     useEffect(() => {
         const scrollToBottom = () => {
-            commentsContainerRef.current.scrollTop = commentsContainerRef.current.scrollHeight
+            commentsContainerRef.current.scrollTop = commentsContainerRef.current.scrollHeight;
         }; 
         if(isOpen){
+          setTimeout(() => {
+            scrollToBottom();
 
-            setTimeout(() => {}, 100);
-        }
+          },1000);
 
+          }
 
-    },[isOpen,post.comment.length])
+        
+
+    },[isOpen,post.comments.length]);
     return (
         <Modal isOpen={isOpen} onClose={onClose} motionPreset='slideInLeft'>
             <ModalOverlay />

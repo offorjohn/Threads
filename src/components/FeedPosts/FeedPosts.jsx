@@ -25,12 +25,17 @@ const FeedPosts = () => {
 
 			{!isLoading && posts.length > 0 && posts.map((post) => <FeedPost key={post.id} post={post} />)}
 			{!isLoading && posts.length === 0 && (
-				<>
-					<Text fontSize={"md"} color={"red.400"}>
-						HELLO FRIENDS FOLLOW A USER&apos; To SEE THEIR POSTS AND INTERACT NICELY WITH THE APP.
-					</Text>
-					<Text color={"red.400"}>LETS HAVE FUN MORE UPDATES COMING SOON!!</Text>
-				</>
+			<>
+			<Text fontSize="md">
+				<span style={{ fontFamily: 'sans-serif', color: Math.random() > 0.5 ? 'black' : 'gold' }}>
+					Optimizations on this home page are currently under development. Please visit this site again from a PC/desktop to see the full functionality. 
+				</span>
+				<Text color={Math.random() > 0.5 ? 'black' : 'gold'}>
+					HADMUSOCIALS
+				</Text>
+			</Text>
+		</>
+		
 			)}
 		</Container>
 	);

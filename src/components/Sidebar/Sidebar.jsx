@@ -1,6 +1,6 @@
 import { Box, Button, Flex, Link, Tooltip } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
-import { InstagramLogo, InstagramMobileLogo } from "../../assets/constants";
+import { Hadmusocials, InstagramMobileLogo } from "../../assets/constants";
 
 import { BiLogOut } from "react-icons/bi";
 import useLogout from "../../hooks/useLogout";
@@ -21,7 +21,7 @@ const Sidebar = () => {
 		>
 			<Flex direction={"column"} gap={10} w='full' height={"full"}>
 				<Link to={"/"} as={RouterLink} pl={2} display={{ base: "none", md: "block" }} cursor='pointer'>
-					<InstagramLogo />
+				𝓗𝓐𝓓<font color="gold">𝓜𝓤𝓢𝓞</font>𝓒𝓘𝓐𝓛𝓢
 				</Link>
 				<Link
 					to={"/"}
